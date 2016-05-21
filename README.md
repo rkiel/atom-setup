@@ -45,4 +45,4 @@ Create sym link for snippets.
 
 Angular
 
-    ln -nfs ~/GitHub/rkiel/atom-setup/snippets.cson ~/.atom/angular.cson
+    ln -nfs ~/GitHub/rkiel/atom-setup/angular.cson ~/.atom/snippets.cson
