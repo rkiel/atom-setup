@@ -18,6 +18,7 @@ Core Settings
 
 Invisibles
 
+* find **Preferred Line Length** and enter **120** 
 * check **Scroll Past End**
 
 #### Packages
