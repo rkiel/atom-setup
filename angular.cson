@@ -39,8 +39,13 @@
   .controller('${1:Controller}', ${1:Controller});
 
   /* @ngInject */
-  function ${1:Controller}() {
+  function ${1:Controller}($2) {
     var vm = this;
+
+    activate();
+
+    function activate() {
+    }
 
     $0
   }
@@ -59,7 +64,7 @@
   .factory('${1:Factory}', ${1:Factory});
 
   /* @ngInject */
-  function ${1:Factory}() {
+  function ${1:Factory}($2) {
     var vm = {
       $0
       _state: createState()
