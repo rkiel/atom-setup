@@ -1,0 +1,28 @@
+"*":
+  core:
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._*"
+      "Thumbs.db"
+      ".vagrant"
+      ".keep"
+      ".gitkeep"
+    ]
+  editor:
+    invisibles: {}
+    preferredLineLength: 120
+    scrollPastEnd: true
+  "exception-reporting":
+    userId: "493788c1-9d12-8f5b-a650-7dd01d21accb"
+  "markdown-preview-plus":
+    useGitHubStyle: true
+  pigments:
+    markerType: "gutter"
+  "tree-view":
+    hideIgnoredNames: true
+  "vim-mode": {}
+  welcome:
+    showOnStartup: false
