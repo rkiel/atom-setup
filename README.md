@@ -18,7 +18,7 @@ Core Settings
 
 Invisibles
 
-* find **Preferred Line Length** and enter **120** 
+* find **Preferred Line Length** and enter **120**
 * check **Scroll Past End**
 
 #### Packages
@@ -43,4 +43,6 @@ Configure `tree-view`
 
 Create sym link for snippets.
 
-    ln -nfs ~/GitHub/rkiel/atom-setup/snippets.cson ~/.atom/snippets.cson
+Angular
+
+    ln -nfs ~/GitHub/rkiel/atom-setup/snippets.cson ~/.atom/angular.cson
