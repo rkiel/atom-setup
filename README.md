@@ -12,6 +12,12 @@ Install Shell Commands
 
 #### Settings
 
+Core Settings
+
+* add `, .vagrant, .keep, .gitkeep` to **Ignored Names**
+
+Invisibles
+
 * check **Scroll Past End**
 
 #### Packages
@@ -27,6 +33,10 @@ Install `markdown-preview-plus`.  (NOTE: open live preview with `ctrl-shift-m`)
 Install `pigments`
 
 * find **Marker Type** and select **gutter**
+
+Configure `tree-view`
+
+* check **Hide Ignored Names**
 
 #### Snippets
 
