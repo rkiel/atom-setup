@@ -1,23 +1,38 @@
-#### Installation
+#### Download and Install Atom
 
-Clone the repository
+[Atom Homepage](https://atom.io/)
 
-    mkdir -p ~/GitHub/rkiel
-    cd ~/GitHub/rkiel
-    git clone https://github.com/rkiel/atom-setup.git
+#### Start Atom
 
-#### Install Shell Commands
+*  This will verify the installation was successful.
+*  It will also create the `~/.atom` directory with a clean setup of configuration files.
+*  Quit out of Atom
+
+#### Install the Shell Commands
+
+For OS X
 
     cd /usr/local/bin
     sudo ln -nfs /Applications/Atom.app/Contents/Resources/app/apm/node_modules/.bin/apm apm
     sudo ln -nfs /Applications/Atom.app/Contents/Resources/app/atom.sh atom
 
+For Linux
+
+    cd /usr/local/bin
+    TBD
+
 #### Install Packages
 
+    apm install vim-mode-plus
     apm install atom-beautify
     apm install markdown-preview-plus
     apm install pigments
-    apm install vim-mode-plus
+
+#### Clone this repository
+
+    mkdir -p ~/GitHub/rkiel
+    cd ~/GitHub/rkiel
+    git clone https://github.com/rkiel/atom-setup.git
 
 #### Configuration
 
