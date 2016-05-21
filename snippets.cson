@@ -28,6 +28,53 @@
     });
     """
 
+  'controller':
+    'prefix': 'con'
+    'body': """
+(function() {
+  'use strict';
+
+  angular
+  .module('application')
+  .controller('${1:Controller}', ${1:Controller});
+
+  /* @ngInject */
+  function ${1:Controller}() {
+    var vm = this;
+
+    $0
+  }
+
+})();
+    """
+
+  'factory':
+    'prefix': 'fac'
+    'body': """
+(function() {
+  'use strict';
+
+  angular
+  .module('application')
+  .factory('${1:Factory}', ${1:Factory});
+
+  /* @ngInject */
+  function ${1:Factory}() {
+    var vm = {
+      $0
+      _state: createState()
+    };
+    return vm;
+
+    function createState() {
+      return {
+      };
+    }
+  }
+
+})();
+    """
+
   'beforeEach':
     'prefix': 'bef'
     'body': """
