@@ -1,4 +1,17 @@
 "*":
+  "atom-beautify":
+    css:
+      beautify_on_save: true
+      indent_size: 2
+      newline_between_rules: true
+    general:
+      _analyticsUserId: "37826a50-e63f-4dbe-9e75-2123961f97d3"
+    html:
+      beautify_on_save: true
+      indent_size: 2
+    js:
+      beautify_on_save: true
+      indent_size: 2
   core:
     ignoredNames: [
       ".git"
@@ -24,5 +37,7 @@
   "tree-view":
     hideIgnoredNames: true
   "vim-mode": {}
+  "vim-mode-plus":
+    highlightSearch: true
   welcome:
     showOnStartup: false

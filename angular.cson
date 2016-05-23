@@ -79,6 +79,25 @@
 
 })();
     """
+  'filter':
+    'prefix': 'fil'
+    'body': """
+(function() {
+  'use strict';
+
+  angular
+    .module('application')
+    .filter('${1:Filter}', ${1:Filter});
+
+  /* @ngInject */
+  function ${1:Filter}() {
+    return function($2) {
+      $0
+    }
+  }
+
+})();
+    """
 
   'beforeEach':
     'prefix': 'bef'
