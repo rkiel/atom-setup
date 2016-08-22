@@ -12,6 +12,10 @@
     js:
       beautify_on_save: true
       indent_size: 2
+    jsx:
+      beautify_on_save: true
+      indent_size: 2
+    ruby: {}
   core:
     ignoredNames: [
       ".git"
@@ -30,14 +34,26 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "493788c1-9d12-8f5b-a650-7dd01d21accb"
+  "language-babel":
+    autoIndentJSX: true
   "markdown-preview-plus":
     useGitHubStyle: true
   pigments:
     markerType: "gutter"
   "tree-view":
     hideIgnoredNames: true
+    hideVcsIgnoredFiles: true
   "vim-mode": {}
   "vim-mode-plus":
     highlightSearch: true
   welcome:
     showOnStartup: false
+".babel.regexp.source":
+  editor:
+    preferredLineLength: 120
+".basic.html.text":
+  editor:
+    preferredLineLength: 120
+".js.jsx.source":
+  editor:
+    preferredLineLength: 120
