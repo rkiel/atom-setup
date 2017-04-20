@@ -34,6 +34,9 @@
     scrollPastEnd: true
   "exception-reporting":
     userId: "493788c1-9d12-8f5b-a650-7dd01d21accb"
+  "file-icons":
+    onChanges: true
+    tabPaneIcon: false    
   "language-babel":
     autoIndentJSX: true
   "markdown-preview-plus":
