@@ -41,8 +41,16 @@ Create sym link for config.
 
     ln -nfs ~/GitHub/rkiel/atom-setup/config.cson ~/.atom/config.cson
 
+Create sym link for styles.
+
+    ln -nfs ~/GitHub/rkiel/atom-setup/styles.less ~/.atom/styles.less
+
 Create sym link for snippets.
 
 For Angular
 
     ln -nfs ~/GitHub/rkiel/atom-setup/angular.cson ~/.atom/snippets.cson
+
+For React
+
+    ln -nfs ~/GitHub/rkiel/atom-setup/react.cson ~/.atom/snippets.cson
