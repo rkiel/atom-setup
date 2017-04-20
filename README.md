@@ -27,6 +27,7 @@ For Linux
     apm install atom-beautify
     apm install markdown-preview-plus
     apm install pigments
+    apm install file-icons
 
 #### Clone this repository
 
