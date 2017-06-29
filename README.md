@@ -47,6 +47,8 @@ Create sym link for styles.
 
 Create sym link for snippets.
 
+    ln -nfs ~/GitHub/rkiel/atom-setup/snippets.cson ~/.atom/snippets.cson
+
 For Angular
 
     ln -nfs ~/GitHub/rkiel/atom-setup/angular.cson ~/.atom/snippets.cson
