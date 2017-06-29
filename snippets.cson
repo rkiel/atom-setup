@@ -1,0 +1,315 @@
+# Your snippets
+#
+# Atom snippets allow you to enter a simple prefix in the editor and hit tab to
+# expand the prefix into a larger code block with templated values.
+#
+# You can create a new snippet in this file by typing "snip" and then hitting
+# tab.
+#
+# An example CoffeeScript snippet to expand log to console.log:
+#
+# '.source.coffee':
+#   'Console log':
+#     'prefix': 'log'
+#     'body': 'console.log $1'
+#
+# Each scope (e.g. '.source.coffee' above) can only be declared once.
+#
+# This file uses CoffeeScript Object Notation (CSON).
+# If you are unfamiliar with CSON, you can read more about it in the
+# Atom Flight Manual:
+# https://atom.io/docs/latest/using-atom-basic-customization#cson
+'.source.js':
+  'console.log':
+    'prefix': 'cl'
+    'body': """
+  console.log("$1", $1);$0
+    """
+
+  'console.log2':
+    'prefix': 'c2'
+    'body': """
+  console.log("$1", $2);$0
+    """
+
+  'describe':
+    'prefix': 'des'
+    'body': """
+    describe('$1', () => {
+      $0
+    }); // $1
+
+    """
+
+  'controller':
+    'prefix': 'con'
+    'body': """
+(function() {
+  'use strict';
+
+  angular
+  .module('${3:SnippetsModuleName}')
+  .controller('${1:Controller}', ${1:Controller});
+
+  /* @ngInject */
+  function ${1:Controller}($2) {
+    const vm = this;
+
+    activate();
+
+    function activate() {
+    }
+
+    $0
+  }
+
+})();
+    """
+
+  'factory':
+    'prefix': 'fac'
+    'body': """
+(function() {
+  'use strict';
+
+  angular
+    .module('${2:SnippetsModuleName}')
+    .factory('${1:FactoryName}', ${1:FactoryName});
+
+  /* @ngInject */
+  function ${1:FactoryName}(fp) {
+    let svc;
+
+    $0
+
+    svc = fp.methods({
+      curry: {},
+      normal: {}
+    });
+    return svc;
+  }
+
+})();
+    """
+  'filter':
+    'prefix': 'fil'
+    'body': """
+(function() {
+  'use strict';
+
+  angular
+    .module('${3:SnippetsModuleName}')
+    .filter('${1:Filter}', ${1:Filter});
+
+  /* @ngInject */
+  function ${1:Filter}() {
+    return function($2) {
+      $0
+    }
+  }
+
+})();
+    """
+
+  'let':
+    'prefix': 'let'
+    'body': """
+      let $1;
+      beforeEach(() => $1 = '{$1}');
+
+      $0
+    """
+
+  'let2':
+    'prefix': 'let2'
+    'body': """
+      let $1, $2;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+
+      $0
+    """
+
+  'let3':
+    'prefix': 'let3'
+    'body': """
+      let $1, $2, $3;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+      beforeEach(() => $3 = '{$3}');
+
+      $0
+    """
+
+  'let4':
+    'prefix': 'let4'
+    'body': """
+      let $1, $2, $3, $4;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+      beforeEach(() => $3 = '{$3}');
+      beforeEach(() => $4 = '{$4}');
+
+      $0
+    """
+
+  'let5':
+    'prefix': 'let5'
+    'body': """
+      let $1, $2, $3, $4, $5;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+      beforeEach(() => $3 = '{$3}');
+      beforeEach(() => $4 = '{$4}');
+      beforeEach(() => $5 = '{$5}');
+
+      $0
+    """
+
+  'let6':
+    'prefix': 'let6'
+    'body': """
+      let $1, $2, $3, $4, $5, $6;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+      beforeEach(() => $3 = '{$3}');
+      beforeEach(() => $4 = '{$4}');
+      beforeEach(() => $5 = '{$5}');
+      beforeEach(() => $6 = '{$6}');
+
+      $0
+    """
+
+  'let7':
+    'prefix': 'let7'
+    'body': """
+      let $1, $2, $3, $4, $5, $6, $7;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+      beforeEach(() => $3 = '{$3}');
+      beforeEach(() => $4 = '{$4}');
+      beforeEach(() => $5 = '{$5}');
+      beforeEach(() => $6 = '{$6}');
+      beforeEach(() => $7 = '{$7}');
+
+      $0
+    """
+
+  'let8':
+    'prefix': 'let8'
+    'body': """
+      let $1, $2, $3, $4, $5, $6, $7, $8;
+      beforeEach(() => $1 = '{$1}');
+      beforeEach(() => $2 = '{$2}');
+      beforeEach(() => $3 = '{$3}');
+      beforeEach(() => $4 = '{$4}');
+      beforeEach(() => $5 = '{$5}');
+      beforeEach(() => $6 = '{$6}');
+      beforeEach(() => $7 = '{$7}');
+      beforeEach(() => $8 = '{$8}');
+
+      $0
+    """
+
+  'should':
+    'prefix': 'should'
+    'body': """
+      it('should $1', () => {
+        expect($2.$3($4)).toEqual($5);
+      });
+    """
+
+  'box':
+    'prefix': 'box'
+    'body': """
+      return Box.of($1)
+        .map($2)
+        .fold($3);
+    """
+
+  'pipeline':
+    'prefix': 'pipeline'
+    'body': """
+      const _$2 = $3;
+      const _$4 = $5;
+
+      return Box.of($1)
+        .map(_$2)
+        .fold(_$4);
+    """
+
+  'spy':
+    'prefix': 'spy'
+    'body': """
+      beforeEach(() => $1 = jasmine.createSpy('$1').and.returnValue($2));
+      afterEach(() => expect($1).toHaveBeenCalledWith($3));
+      $0
+    """
+
+  'when':
+    'prefix': 'when'
+    'body': """
+    describe('when $1', () => {
+      beforeEach(() => spyOn($2,'$3').and.returnValue($4));
+      afterEach(() => expect($2.$3).toHaveBeenCalledWith($5));
+
+      $0
+    });
+
+    """
+
+  'curryspy':
+    'prefix': 'curryspy'
+    'body': """
+    describe('when $1', () => {
+      let $3;
+      beforeEach(() => $3 = jasmine.createSpy('$3').and.returnValue($6));
+      afterEach(() => expect($3).toHaveBeenCalledWith($5));
+
+      beforeEach(() => spyOn($2,'$3').and.returnValue($3));
+      afterEach(() => expect($2.$3).toHaveBeenCalledWith($4));
+      
+      $0
+    });
+
+    """
+
+  'beforeEach':
+    'prefix': 'bef'
+    'body': """
+    beforeEach(() => $1);
+    """
+
+  'afterEach':
+    'prefix': 'aft'
+    'body': """
+    afterEach(() => $1);
+    """
+
+  'it':
+    'prefix': 'it'
+    'body': """
+    it('should $1', () => {
+      $2
+    });
+    """
+
+  'test':
+    'prefix': 'test'
+    'body': """
+/* globals $1 */
+(function() {
+  'use strict';
+
+  describe('$1', () => {
+
+    beforeEach(() => {
+      bard.appModule('${2:SnippetsModuleName}');
+      bard.inject(this, '$1');
+    });
+
+    $0
+  }); // $1
+
+})();
+"""
