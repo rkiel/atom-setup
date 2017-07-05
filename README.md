@@ -28,6 +28,7 @@ For Linux
     apm install markdown-preview-plus
     apm install pigments
     apm install file-icons
+    apm install platformio-ide-terminal
 
 #### Clone this repository
 
