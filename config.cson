@@ -12,8 +12,11 @@
     js:
       beautify_on_save: true
       indent_size: 2
+    json:
+      beautify_on_save: true
     jsx:
       beautify_on_save: true
+      default_beautifier: "JS Beautify"
       indent_size: 2
     ruby: {}
   core:
@@ -28,6 +31,7 @@
       ".keep"
       ".gitkeep"
     ]
+    telemetryConsent: "no"
   editor:
     invisibles: {}
     preferredLineLength: 120
@@ -36,7 +40,7 @@
     userId: "493788c1-9d12-8f5b-a650-7dd01d21accb"
   "file-icons":
     onChanges: true
-    tabPaneIcon: false    
+    tabPaneIcon: false
   "language-babel":
     autoIndentJSX: true
   "markdown-preview-plus":
