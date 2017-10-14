@@ -23,12 +23,19 @@ For Linux
 
 #### Install Packages
 
-    apm install vim-mode-plus
-    apm install atom-beautify
+    apm install file-icons
+    apm install linter
+
+    apm install intentions
+    apm install busy-signal
+    apm install linter-ui-default
+
+    apm install linter-eslint
     apm install markdown-preview-plus
     apm install pigments
-    apm install file-icons
     apm install platformio-ide-terminal
+    apm install prettier-atom
+    apm install vim-mode-plus
 
 #### Clone this repository
 
@@ -57,3 +64,7 @@ For Angular
 For React
 
     ln -nfs ~/GitHub/rkiel/atom-setup/react.cson ~/.atom/snippets.cson
+
+For Vue
+
+    ln -nfs ~/GitHub/rkiel/atom-setup/vue.cson ~/.atom/snippets.cson

@@ -10,7 +10,6 @@
       beautify_on_save: true
       indent_size: 2
     js:
-      beautify_on_save: true
       indent_size: 2
     json:
       beautify_on_save: true
@@ -19,7 +18,11 @@
       default_beautifier: "JS Beautify"
       indent_size: 2
     ruby: {}
+  "atom-package-deps":
+    ignored: []
   core:
+    closeEmptyWindows: false
+    disabledPackages: []
     ignoredNames: [
       ".git"
       ".hg"
@@ -41,18 +44,27 @@
   "file-icons":
     onChanges: true
     tabPaneIcon: false
-  "language-babel":
-    autoIndentJSX: true
+  "linter-eslint": {}
+  "linter-ui-default":
+    panelHeight: 69
+    showPanel: true
   "markdown-preview-plus":
     useGitHubStyle: true
   pigments:
     markerType: "gutter"
+  "prettier-atom":
+    formatOnSaveOptions:
+      enabled: true
+      isDisabledIfNotInPackageJson: true
+    prettierOptions:
+      printWidth: 120
+      singleQuote: true
   "tree-view":
     hideIgnoredNames: true
-    hideVcsIgnoredFiles: true
   "vim-mode": {}
   "vim-mode-plus":
     highlightSearch: true
+    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   welcome:
     showOnStartup: false
 ".babel.regexp.source":
