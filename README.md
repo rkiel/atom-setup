@@ -68,3 +68,20 @@ For React
 For Vue
 
     ln -nfs ~/GitHub/rkiel/atom-setup/vue.cson ~/.atom/snippets.cson
+
+#### Upgrade Packages
+
+    apm upgrade file-icons
+    apm upgrade linter
+
+    apm upgrade intentions
+    apm upgrade busy-signal
+    apm upgrade linter-ui-default
+
+    apm upgrade linter-eslint
+    apm upgrade markdown-preview-plus
+    apm upgrade pigments
+    apm upgrade platformio-ide-terminal
+    apm upgrade prettier-atom
+    apm upgrade vim-mode-plus
+
