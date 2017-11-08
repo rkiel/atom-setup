@@ -10,38 +10,18 @@ module Setup
 
     def initialize (argv)
       @options = OpenStruct.new
-      options.debug  = false
+      options.action = 'install -c false'
 
       @option_parser = OptionParser.new do |op|
-        op.banner = "Usage: user_data options"
+        op.banner = "Usage: setup options"
 
-        # op.on('-a','--[no-]amazon') do |argument|
-        #   options.amazon = argument
-        #   options.os = UserData::Amazon.new
-        # end
-        #
-        # op.on('-b','--bucket BUCKET') do |argument|
-        #   options.bucket = argument
-        # end
-        #
-        # op.on('-c','--[no-]centos') do |argument|
-        #   options.centos = argument
-        #   options.os = UserData::Centos.new
-        # end
-        #
-        # op.on('-u','--user USER') do |argument|
-        #   options.user = argument
-        # end
-        #
-        # op.on('-e','--email EMAIL') do |argument|
-        #   options.email = argument
-        # end
-        #
-        #
-        # op.on('-G','--github GITHUB', GITHUB_OPTIONS, GITHUB_OPTIONS.sort.join(', ')) do |argument|
-        #   options.github = argument
-        # end
+        op.on('-i','--install') do |argument|
+          options.action = 'install -c false'
+        end
 
+        op.on('-u','--update') do |argument|
+          options.action = 'update -c false'
+        end
 
         op.on_tail('-h','--help') do |argument|
           puts op
@@ -63,19 +43,21 @@ module Setup
     end
 
     def execute
-      run_cmd 'apm install file-icons'
-      run_cmd 'apm install linter'
+      action = options.action
 
-      run_cmd 'apm install intentions'
-      run_cmd 'apm install busy-signal'
-      run_cmd 'apm install linter-ui-default'
+      run_cmd "apm #{action} file-icons"
+      run_cmd "apm #{action} linter"
 
-      run_cmd 'apm install linter-eslint'
-      run_cmd 'apm install markdown-preview-plus'
-      run_cmd 'apm install pigments'
-      run_cmd 'apm install platformio-ide-terminal'
-      run_cmd 'apm install prettier-atom'
-      run_cmd 'apm install vim-mode-plus'
+      run_cmd "apm #{action} intentions"
+      run_cmd "apm #{action} busy-signal"
+      run_cmd "apm #{action} linter-ui-default"
+
+      run_cmd "apm #{action} linter-eslint"
+      run_cmd "apm #{action} markdown-preview-plus"
+      run_cmd "apm #{action} pigments"
+      run_cmd "apm #{action} platformio-ide-terminal"
+      run_cmd "apm #{action} prettier-atom"
+      run_cmd "apm #{action} vim-mode-plus"
 
       run_cmd 'ln -nfs ~/GitHub/rkiel/atom-setup/config.cson ~/.atom/config.cson'
       run_cmd 'ln -nfs ~/GitHub/rkiel/atom-setup/styles.less ~/.atom/styles.less'
