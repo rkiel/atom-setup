@@ -57,6 +57,7 @@
       enabled: true
       isDisabledIfNotInPackageJson: true
     prettierOptions:
+      jsxBracketSameLine: true
       printWidth: 120
       singleQuote: true
   "tree-view":
