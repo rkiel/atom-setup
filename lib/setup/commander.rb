@@ -10,7 +10,6 @@ module Setup
 
     def initialize (argv)
       @options = OpenStruct.new
-      options.action = 'install -c false'
 
       @option_parser = OptionParser.new do |op|
         op.banner = "Usage: setup options"
@@ -34,7 +33,7 @@ module Setup
     end
 
     def valid?
-      true
+      options.action
     end
 
     def help
