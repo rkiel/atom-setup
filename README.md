@@ -24,9 +24,9 @@ For OS X
 #### Install Packages
 
     cd ~/GitHub/rkiel/atom-setup
-    ./bin/setup --install
+    ./install/bin/setup --install
 
 #### Upgrade Packages
 
     cd ~/GitHub/rkiel/atom-setup
-    ./bin/setup --update
+    ./install/bin/setup --update
