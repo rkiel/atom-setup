@@ -57,6 +57,7 @@ module Setup
       run_cmd "apm #{action} platformio-ide-terminal"
       run_cmd "apm #{action} prettier-atom"
       run_cmd "apm #{action} vim-mode-plus"
+      run_cmd "apm #{action} language-vue"
 
       run_cmd 'ln -nfs ~/GitHub/rkiel/atom-setup/config.cson ~/.atom/config.cson'
       run_cmd 'ln -nfs ~/GitHub/rkiel/atom-setup/styles.less ~/.atom/styles.less'
