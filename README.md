@@ -1,20 +1,25 @@
-#### Download and Install Atom
+### Install Atom
 
-* Go to [Atom Homepage](https://atom.io/)
+* Browse to [Atom Homepage](https://atom.io/)
 * Click **Download**
 * Unpack download file
-  * Go to **Downloads** and double click **atom-mac.zip** (macOS)
-  * `cd ~/Downloads && unzip atom-mac.zip` (macOS)
+  * macOS
+    * Go to **Downloads** and double click **atom-mac.zip** (Finder)
+    * `cd ~/Downloads && unzip atom-mac.zip` (Terminal)
 * Install Atom
-  * Move **Atom** to the **Applications** folder (macOS)
-  * `mv ~/Downloads/Atom.app /Applications` (macOS)
+  * macOS
+    * Move **Atom** to **Applications** folder (Finder)
+    * `mv ~/Downloads/Atom.app /Applications` (Terminal)
 * Start Atom
-  * Go to **Applications** and double click **Atom** (macOS)
-  * `open -a Atom` (macOS)
+  * macOS
+    * Go to **Applications** and double click **Atom** (Finder)
+    * `open -a Atom` (Terminal)
 * Exit Atom
   * This will have created `~/.atom` (needed later)
 
-#### Install Command-Line Tools (macOS)
+### Install Command-Line Tools
+
+#### macOS
 
 Make the Atom command-line tools available to users by adding them to `/usr/local/bin`.
 
@@ -39,17 +44,17 @@ cd /usr/local/bin
 sudo ln -nfs /Applications/Atom.app/Contents/Resources/app/apm/node_modules/.bin/apm apm
 ```
 
-#### Clone this repository
+### Clone this repository
 
     mkdir -p ~/GitHub/rkiel && cd $_
     git clone https://github.com/rkiel/atom-setup.git
 
-#### Install Packages (first time only)
+### Install Packages (first time only)
 
     cd ~/GitHub/rkiel/atom-setup
     ./install/bin/setup --install
 
-#### Upgrade Packages
+### Upgrade Packages
 
     cd ~/GitHub/rkiel/atom-setup
     ./install/bin/setup --update
