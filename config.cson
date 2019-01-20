@@ -36,6 +36,7 @@
     ]
     telemetryConsent: "no"
   editor:
+    fontSize: 15
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
@@ -55,7 +56,6 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
-      isDisabledIfNotInPackageJson: true
     prettierOptions:
       jsxBracketSameLine: true
       printWidth: 120
@@ -65,7 +65,6 @@
   "vim-mode": {}
   "vim-mode-plus":
     highlightSearch: true
-    notifiedCoffeeScriptNoLongerSupportedToExtendVMP: true
   welcome:
     showOnStartup: false
 ".babel.regexp.source":
