@@ -21,8 +21,15 @@
   "atom-package-deps":
     ignored: []
   core:
+    automaticallyUpdate: false
     closeEmptyWindows: false
-    disabledPackages: []
+    customFileTypes:
+      "text.html.basic": [
+        "svelte"
+      ]
+    disabledPackages: [
+      "markdown-preview"
+    ]
     ignoredNames: [
       ".git"
       ".hg"
@@ -36,7 +43,7 @@
     ]
     telemetryConsent: "no"
   editor:
-    fontSize: 15
+    fontSize: 16
     invisibles: {}
     preferredLineLength: 120
     scrollPastEnd: true
@@ -45,9 +52,11 @@
   "file-icons":
     onChanges: true
     tabPaneIcon: false
-  "linter-eslint": {}
+  "linter-eslint":
+    advanced: {}
+    autofix:
+      fixOnSave: true
   "linter-ui-default":
-    panelHeight: 69
     showPanel: true
   "markdown-preview-plus":
     useGitHubStyle: true
@@ -56,6 +65,7 @@
   "prettier-atom":
     formatOnSaveOptions:
       enabled: true
+    prettierEslintOptions: {}
     prettierOptions:
       jsxBracketSameLine: true
       printWidth: 120
