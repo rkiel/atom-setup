@@ -1,10 +1,20 @@
-#!/usr/bin/env ruby
+ACTION = "$1 -c false" # install or update
 
-require_relative '../lib/setup/commander'
+apm ${ACTION} busy-signal
+apm ${ACTION} file-icons
+apm ${ACTION} intentions
+apm ${ACTION} language-vue
+apm ${ACTION} linter
+apm ${ACTION} linter-eslint
+apm ${ACTION} linter-ui-default
+apm ${ACTION} markdown-preview-plus
+apm ${ACTION} pigments
+apm ${ACTION} platformio-ide-terminal
+apm ${ACTION} prettier-atom
+apm ${ACTION} sort-lines
+apm ${ACTION} vim-mode-plus
 
-commander = Setup::Commander.new(ARGV)
-if commander.valid?
-  commander.execute
-else
-  commander.help
-end
+mkdir -p ~/.atom
+ln -nfs ~/GitHub/rkiel/atom-setup/config.cson ~/.atom/config.cson
+ln -nfs ~/GitHub/rkiel/atom-setup/styles.less ~/.atom/styles.less
+ln -nfs ~/GitHub/rkiel/atom-setup/snippets.cson ~/.atom/snippets.cson
