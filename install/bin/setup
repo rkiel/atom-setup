@@ -1,4 +1,4 @@
-ACTION = "$1 -c false" # install or update
+ACTION="$1 -c false" # install or update
 
 apm ${ACTION} busy-signal
 apm ${ACTION} file-icons
